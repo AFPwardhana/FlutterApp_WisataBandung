@@ -1,4 +1,4 @@
-# dicoding_colab
+# colab_app1
 
 A new Flutter project.
 
