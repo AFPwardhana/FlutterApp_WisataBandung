@@ -18,7 +18,10 @@ class DetailScreen extends StatelessWidget {
           children: [
             Stack(
               children: [
-                Image.asset(place.imageAsset),
+                Hero(
+                  tag: place.name,
+                  child: Image.asset(place.imageAsset),
+                ),
                 SafeArea(
                   child: IconButton(
                     icon: Icon(Icons.arrow_back),

@@ -162,7 +162,9 @@ class MainScreen extends StatelessWidget {
               children: [
                 Expanded(
                   flex: 1,
-                  child: Image.asset(_tourismPlaceList[index].imageAsset),
+                  child: Hero(
+                      tag: _tourismPlaceList[index].name,
+                      child: Image.asset(_tourismPlaceList[index].imageAsset)),
                 ),
                 Expanded(
                   flex: 2,
